@@ -47,7 +47,14 @@
 
 ; Problem 3 n-leaves T 
 {define (n-leaves T)
-  (if (null? T)  }
+  (cond 
+        [ (null? T) 0 ]  
+        [ (and (null? (left T) ) 
+               (null? (right T) ) ) 1]
+        [else (+ (n-leaves(left T) ) 
+                 (n-leaves (right T) ) ) ]
+  )
+}
 ; Problem 3 height T 
 {define (height T)
   (if (null? T) 0 
