@@ -19,7 +19,7 @@ subset([H | T] , Y) :- isSet([H | T]) , isSet(Y) , member(H,Y), subset(T,Y).
 %Problem 2
 tally(_,[],0).
 tally(A,[A|T],N) :- tally(A,T,X), N is X + 1.
-tally(A,[H|T],N) :- A \= H, tally(A,T,N).
+tally(A,[H|T],N) :- tally(A,T,N).
 
 %Problem 3
 subst(_,_,[],[]).
