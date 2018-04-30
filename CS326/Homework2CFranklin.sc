@@ -1,3 +1,7 @@
+; Clayton Franklin
+; Homework 2
+; 2/20/18
+;
 ; Problem 1
 {define (subst x y L)
   (cond 
