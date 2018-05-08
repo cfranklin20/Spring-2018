@@ -1,6 +1,11 @@
+//Author: Clayton Franklin
+//File: ColorPicker.java
+//Course: CS326
+//Assignment: Homework 8
+//Date: May 8, 2018
+
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
+import javax.swing.event.*;
 import java.awt.event.*;
 import java.awt.*;
 import java.io.*;
@@ -380,4 +385,3 @@ public class ColorPicker extends JFrame
         }
     }
 }
-
